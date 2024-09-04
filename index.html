@@ -14,13 +14,25 @@
   <body>
     <header>
       <!-- Logo -->
-      <img src="img/logo.svg" alt="logo" />
+      <img
+        title="AW logo"
+        src="img/adam-wrobel-logo.svg"
+        alt="Personal logo of Adam Wrobel, made of colorful capital A and W letters."
+      />
       <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html#about">About</a></li>
-          <li><a href="work.html">Work</a></li>
-          <li><a href="contact.html">Contact</a></li>
+        <ul role="menubar">
+          <li role="presentation">
+            <a role="menuitem" href="index.html">Home</a>
+          </li>
+          <li role="presentation">
+            <a role="menuitem" href="about.html">About me</a>
+          </li>
+          <li role="presentation">
+            <a role="menuitem" href="work.html">Work</a>
+          </li>
+          <li role="presentation">
+            <a role="menuitem" href="contact.html">Contact</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -29,7 +41,7 @@
         <div>
           <!-- Adam Wrobel avatar -->
           <img
-            src="img/avatar.svg"
+            src="img/adam-wrobel-home-avatar.svg"
             alt="Web Dev avatar"
             style="width: 400px; height: 400px"
           />
@@ -38,9 +50,11 @@
           <!-- Introduction -->
           <h1>Hello World!</h1>
           <p>My name is Adam Wróbel.</p>
-          <p>I am a <span> &lt;web&gt; </span> developer</p>
+          <p>I am a <span role="presentation"> &lt;web&gt; </span> developer</p>
           <!-- A call-to-action link -->
-          <a href="#">Check out some of my code</a>
+          <a href="https://github.com/Mahir33/CF-Portfolio" target="_blank"
+            >Check out my code on GitHub</a
+          >
         </div>
       </div>
     </main>
@@ -59,5 +73,7 @@
         </a>
       </div>
     </footer>
+
+    <script src="node_modules\tota11y\build\tota11y.min.js"></script>
   </body>
 </html>

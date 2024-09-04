@@ -14,26 +14,37 @@
   <body>
     <header>
       <!-- Logo -->
-      <img src="img/logo.svg" alt="logo" />
+      <img
+        src="img/adam-wrobel-logo.svg"
+        alt="Personal logo of Adam Wrobel, made of colorful capital A and W letters."
+      />
       <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="work.html">Work</a></li>
-          <li><a href="contact.html">Contact</a></li>
+        <ul role="menubar">
+          <li role="presentation">
+            <a role="menuitem" href="index.html">Home</a>
+          </li>
+          <li role="presentation">
+            <a role="menuitem" href="about.html">About me</a>
+          </li>
+          <li role="presentation">
+            <a role="menuitem" href="work.html">Work</a>
+          </li>
+          <li role="presentation">
+            <a role="menuitem" href="contact.html">Contact</a>
+          </li>
         </ul>
       </nav>
     </header>
     <main>
       <h1>Contact</h1>
 
-      <article>
+      <div>
         <!-- Address -->
-        <h3>Adam Wróbel</h3>
+        <h2>Adam Wróbel</h2>
         <p>c/o Hanz</p>
-        <p>Handjerystraße 127</p>
+        <p>Handjerystr. 127</p>
         <p>12161 Berlin</p>
-        <p>Deutschland</p>
+        <p>Germany</p>
         <br />
         <!-- Linked phone -->
         <a href="tel:+49 123456789">Tel: +49 123456789</a>
@@ -44,7 +55,47 @@
         </a>
         <br />
         <a href="mailto:adam.marek.wrobel@gmail.com"> Contact me </a>
-      </article>
+      </div>
+      <form action="" method="post" id="contact-form">
+        <label class="standard-label" for="your-email">E-mail: </label>
+        <br />
+        <input type="email" name="email" id="your-email" value="" required />
+        <br />
+        <label class="standard-label" for="your-phone">Telephone: </label>
+        <br />
+        <input
+          type="tel"
+          name="phone"
+          id="your-phone"
+          value=""
+          pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+        />
+        <br />
+        <label class="standard-label" for="your-message" value=""
+          >Message:
+        </label>
+        <br />
+        <textarea
+          name="message"
+          id="your-message"
+          placeholder="Your message should contain at least 10 characters and not more than 300 characters."
+          rows="10"
+          minlength="10"
+          maxlength="300"
+          required
+        ></textarea>
+        <br />
+        <input type="checkbox" id="agreement" name="agreement" required />
+        <label for="agreement">
+          I agree to our
+          <a href="#">therms</a> of use.
+        </label>
+        <br />
+        <input type="checkbox" id="newsletter" name="newsletter" />
+        <label for="newsletter"> Add me to the newsletter. </label>
+        <br />
+        <button type="submit" role="button">Send message</button>
+      </form>
     </main>
     <footer>
       <p>Find me on</p>
@@ -61,5 +112,6 @@
         </a>
       </div>
     </footer>
+    <script src="node_modules\tota11y\build\tota11y.min.js"></script>
   </body>
 </html>

@@ -14,17 +14,30 @@
   <body>
     <header>
       <!-- Logo -->
-      <img src="img/logo.svg" alt="logo" />
+      <img
+        src="img/adam-wrobel-logo.svg"
+        alt="Personal logo of Adam Wrobel, made of colorful capital A and W letters."
+      />
       <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="work.html">Work</a></li>
-          <li><a href="contact.html">Contact</a></li>
+        <ul role="menubar">
+          <li role="presentation">
+            <a role="menuitem" href="index.html">Home</a>
+          </li>
+          <li role="presentation">
+            <a role="menuitem" href="about.html">About me</a>
+          </li>
+          <li role="presentation">
+            <a role="menuitem" href="work.html">Work</a>
+          </li>
+          <li role="presentation">
+            <a role="menuitem" href="contact.html">Contact</a>
+          </li>
         </ul>
       </nav>
     </header>
-    <main>WORK</main>
+    <main>
+      <h1>My work</h1>
+    </main>
     <footer>
       <p>Find me on</p>
       <div>
@@ -43,5 +56,6 @@
         </a>
       </div>
     </footer>
+    <script src="node_modules\tota11y\build\tota11y.min.js"></script>
   </body>
 </html>
