@@ -9,50 +9,85 @@
       content="Adam Wrobel Web Developers Portfolio Web Page."
     />
     <title>Adam Wróbel - Portfolio</title>
+
+    <!-- Styles Reset  -->
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css" />
+    <!-- Styles -->
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <header>
       <!-- Logo -->
-      <img
-        title="AW logo"
-        src="img/adam-wrobel-logo.svg"
-        alt="Personal logo of Adam Wrobel, made of colorful capital A and W letters."
-      />
+      <a href="index.html">
+        <img
+          class="logo"
+          src="../img/adam-wrobel-logo.svg"
+          alt="Personal logo of Adam Wrobel, made of colorful capital A and W letters."
+        />
+      </a>
       <nav>
-        <ul role="menubar">
+        <ul role="menubar" class="navigation-list">
           <li role="presentation">
-            <a role="menuitem" href="index.html">Home</a>
+            <a role="menuitem" class="navigation-list__item" href="index.html"
+              >Home</a
+            >
           </li>
           <li role="presentation">
-            <a role="menuitem" href="about.html">About me</a>
+            <a
+              role="menuitem"
+              class="navigation-list__item"
+              href="pages/about.html"
+              >About me</a
+            >
           </li>
           <li role="presentation">
-            <a role="menuitem" href="work.html">Work</a>
+            <a
+              role="menuitem"
+              class="navigation-list__item"
+              href="pages/work.html"
+              >Work</a
+            >
           </li>
           <li role="presentation">
-            <a role="menuitem" href="contact.html">Contact</a>
+            <a
+              role="menuitem"
+              class="navigation-list__item"
+              href="pages/contact.html"
+              >Contact</a
+            >
           </li>
         </ul>
       </nav>
     </header>
     <main>
-      <div>
-        <div>
-          <!-- Adam Wrobel avatar -->
-          <img
-            src="img/adam-wrobel-home-avatar.svg"
-            alt="Web Dev avatar"
-            style="width: 400px; height: 400px"
-          />
-        </div>
-        <div>
+      <div class="intro-container">
+        <!-- Adam Wrobel avatar -->
+
+        <img
+          class="intro-container__avatar"
+          src="img/adam-wrobel-home-avatar.svg"
+          alt="Web Dev avatar"
+        />
+
+        <div class="intro-container__introduction">
           <!-- Introduction -->
           <h1>Hello World!</h1>
           <p>My name is Adam Wróbel.</p>
-          <p>I am a <span role="presentation"> &lt;web&gt; </span> developer</p>
+          <p>
+            I am a
+            <span
+              role="presentation"
+              class="intro-container__introduction--accent"
+            >
+              &lt;web&gt;
+            </span>
+            developer based in Berlin.
+          </p>
           <!-- A call-to-action link -->
-          <a href="https://github.com/Mahir33/CF-Portfolio" target="_blank"
+          <a
+            class="intro-container__introduction--link-item"
+            href="https://github.com/Mahir33/CF-Portfolio"
+            target="_blank"
             >Check out my code on GitHub</a
           >
         </div>
@@ -60,16 +95,28 @@
     </main>
     <footer>
       <p>Find me on</p>
-      <div>
+      <div class="media-icons">
         <!-- Social Media -->
         <a href="https://github.com/Mahir33">
-          <img src="img/github_icon.svg" alt="Github icon" />
+          <img
+            class="media-icons__icon"
+            src="img/github_icon.svg"
+            alt="Github icon"
+          />
         </a>
         <a href="https://x.com/">
-          <img src="img/twitter_icon.svg" alt="Twitter icon" />
+          <img
+            class="media-icons__icon"
+            src="img/twitter_icon.svg"
+            alt="Twitter icon"
+          />
         </a>
         <a href="https://www.linkedin.com/in/adam-wrobel-90473a317/">
-          <img src="img/linkedin_icon.svg" alt="LinkedIn icon" />
+          <img
+            class="media-icons__icon"
+            src="img/linkedin_icon.svg"
+            alt="LinkedIn icon"
+          />
         </a>
       </div>
     </footer>

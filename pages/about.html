@@ -2,48 +2,68 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon" />
+    <link rel="shortcut icon" href="../img/favicon.svg" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
       content="Adam Wrobel Web Developers Portfolio Web Page."
     />
     <title>Adam Wróbel - Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="../node_modules/normalize.css/normalize.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
   </head>
   <body>
     <header>
       <!-- Logo -->
-      <img
-        src="img/adam-wrobel-logo.svg"
-        alt="Personal logo of Adam Wrobel, made of colorful capital A and W letters."
-      />
+      <a href="index.html">
+        <img
+          class="logo"
+          src="../img/adam-wrobel-logo.svg"
+          alt="Personal logo of Adam Wrobel, made of colorful capital A and W letters."
+        />
+      </a>
       <nav>
-        <ul role="menubar">
+        <ul role="menubar" class="navigation-list">
           <li role="presentation">
-            <a role="menuitem" href="index.html">Home</a>
+            <a
+              role="menuitem"
+              class="navigation-list__item"
+              href="../index.html"
+              >Home</a
+            >
           </li>
           <li role="presentation">
-            <a role="menuitem" href="about.html">About me</a>
+            <a role="menuitem" class="navigation-list__item" href="about.html"
+              >About me</a
+            >
           </li>
           <li role="presentation">
-            <a role="menuitem" href="work.html">Work</a>
+            <a role="menuitem" class="navigation-list__item" href="work.html"
+              >Work</a
+            >
           </li>
           <li role="presentation">
-            <a role="menuitem" href="contact.html">Contact</a>
+            <a role="menuitem" class="navigation-list__item" href="contact.html"
+              >Contact</a
+            >
           </li>
         </ul>
       </nav>
     </header>
     <main>
-      <div>
-        <h1 id="about">About me</h1>
+      <div class="about-section">
+        <h1 id="about">About</h1>
         <h2>
           Hi there! My name is Adam, I am from Poland and I am a programmer.
         </h2>
         <p>Beside that I like see and I am passionate board game's player :)</p>
-        <a href="data/files/Dokument1.pdf">See the file</a>
-        <table>
+        <a
+          class="about-section__doc-download"
+          href="../data/files/Dokument1.pdf"
+          target="_blank"
+          >Download my CV!</a
+        >
+        <!-- <table>
           <thead>
             <caption>
               My core skills
@@ -71,13 +91,9 @@
               <td>Very good</td>
             </tr>
           </tbody>
-        </table>
-        <div>
-          <img
-            style="width: 400px; height: 400px"
-            src="img/adam-wrobel-about-me-avatar.svg"
-            alt="Personal avatar of Adam Wrobel sitting on a beach, coding on his laptop at night."
-          />
+        </table> -->
+        <div class="about-section__background">
+          <div class="about-section__beach-avatar"></div>
         </div>
       </div>
     </main>
@@ -86,16 +102,16 @@
       <div>
         <!-- Social Media -->
         <a href="https://github.com/Mahir33">
-          <img src="img/github_icon.svg" alt="Github icon" />
+          <img src="../img/github_icon.svg" alt="Github icon" />
         </a>
         <a href="https://x.com/">
-          <img src="img/twitter_icon.svg" alt="Twitter icon" />
+          <img src="../img/twitter_icon.svg" alt="Twitter icon" />
         </a>
         <a href="https://www.linkedin.com/in/adam-wrobel-90473a317/">
-          <img src="img/linkedin_icon.svg" alt="LinkedIn icon" />
+          <img src="../img/linkedin_icon.svg" alt="LinkedIn icon" />
         </a>
       </div>
     </footer>
-    <script src="node_modules\tota11y\build\tota11y.min.js"></script>
+    <script src="../node_modules\tota11y\build\tota11y.min.js"></script>
   </body>
 </html>
