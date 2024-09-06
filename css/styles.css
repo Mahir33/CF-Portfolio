@@ -51,7 +51,7 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  position: fixed;
+  position: relative;
   bottom: 0;
   right: 0;
   left: 0;
@@ -168,7 +168,8 @@ footer {
 }
 
 .about-section h1,
-.contact-section h1 {
+.contact-section h1,
+.work__title {
   font-weight: 400;
   letter-spacing: 2px;
   font-size: 5rem;
@@ -280,6 +281,67 @@ textarea {
   background-color: var(--secondary-color);
 }
 
+/* --------WORK SECTION---------- */
+
+.work {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 50%;
+  height: 80vh;
+}
+
+.work-section {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 45% 45%;
+  gap: 20px;
+  height: 100%;
+}
+
+.work-section__project {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+
+  -webkit-box-shadow: 6px 8px 17px -11px rgba(189, 189, 189, 1);
+  -moz-box-shadow: 6px 8px 17px -11px rgba(189, 189, 189, 1);
+  box-shadow: 6px 8px 17px -11px rgba(189, 189, 189, 1);
+}
+
+.work-section__project--title {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.work-section__project--details {
+  display: flex;
+}
+
+.work-section__project--details--description {
+  padding: 10px 20px;
+  font-size: 1.6rem;
+}
+
+.work-section__project--details img {
+  max-width: 35%;
+}
+
+.work-section__project--link {
+  display: inline-block;
+  margin: 10px 10px 10px 0;
+  padding: 10px 20px;
+  background-color: #8fd1c7;
+  color: #357b70;
+  font-weight: 500;
+  font-size: 1.6rem;
+  border-radius: 9px;
+  transition: 0.5s;
+}
 /* ------------FOOTER------------ */
 
 footer p {
