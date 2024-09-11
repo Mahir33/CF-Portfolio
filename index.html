@@ -18,17 +18,20 @@
   <body>
     <header>
       <!-- Logo -->
-      <a href="index.html">
+      <a class="logo" href="index.html">
         <img
-          class="logo"
+          class="logo__picture"
           src="img/adam-wrobel-logo.svg"
           alt="Personal logo of Adam Wrobel, made of colorful capital A and W letters."
         />
       </a>
       <nav>
         <ul role="menubar" class="navigation-list">
-          <li role="presentation">
-            <a role="menuitem" class="navigation-list__item" href="index.html"
+          <li role="presentation" class="navigation-list__item">
+            <a
+              role="menuitem"
+              class="navigation-list__item--link"
+              href="index.html"
               >Home</a
             >
           </li>
@@ -57,12 +60,17 @@
             >
           </li>
         </ul>
+        <div class="hamburger">
+          <div class="hamburger__items">
+            <div class="hamburger__items--line"></div>
+            <div class="hamburger__items--line"></div>
+            <div class="hamburger__items--line"></div>
+          </div>
+        </div>
       </nav>
     </header>
     <main>
       <div class="intro-container">
-        <!-- Adam Wrobel avatar -->
-
         <img
           class="intro-container__avatar"
           src="img/adam-wrobel-home-avatar.svg"
@@ -70,7 +78,6 @@
         />
 
         <div class="intro-container__introduction">
-          <!-- Introduction -->
           <h1>Hello World!</h1>
           <p>My name is Adam Wróbel.</p>
           <p>
@@ -83,7 +90,7 @@
             </span>
             developer based in Berlin.
           </p>
-          <!-- A call-to-action link -->
+
           <a
             class="intro-container__introduction--link-item"
             href="https://github.com/Mahir33/CF-Portfolio"
@@ -96,7 +103,6 @@
     <footer>
       <p>Find me on</p>
       <div class="media-icons">
-        <!-- Social Media -->
         <a href="https://github.com/Mahir33">
           <img
             class="media-icons__icon"
@@ -122,5 +128,6 @@
     </footer>
 
     <script src="node_modules\tota11y\build\tota11y.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
