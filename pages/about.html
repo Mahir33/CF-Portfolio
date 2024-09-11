@@ -15,9 +15,9 @@
   <body>
     <header>
       <!-- Logo -->
-      <a href="index.html">
+      <a class="logo" href="index.html">
         <img
-          class="logo"
+          class="logo__picture"
           src="../img/adam-wrobel-logo.svg"
           alt="Personal logo of Adam Wrobel, made of colorful capital A and W letters."
         />
@@ -48,11 +48,19 @@
             >
           </li>
         </ul>
+        <div class="hamburger">
+          <div class="hamburger__items">
+            <div class="hamburger__items--line"></div>
+            <div class="hamburger__items--line"></div>
+            <div class="hamburger__items--line"></div>
+          </div>
+        </div>
       </nav>
     </header>
     <main>
       <div class="about-section">
-        <h1 id="about">About</h1>
+        <h1 id="about">About me</h1>
+        <div class="underline"></div>
         <h2>
           Hi there! My name is Adam, I am from Poland and I am a programmer.
         </h2>
@@ -61,6 +69,7 @@
           passionate board game's player :)
         </p>
         <a
+          role="button"
           class="about-section__doc-download"
           href="../data/files/Dokument1.pdf"
           target="_blank"
@@ -95,23 +104,35 @@
             </tr>
           </tbody>
         </table> -->
-        <div class="about-section__background">
-          <div class="about-section__beach-avatar"></div>
+        <div class="hero">
+          <div class="hero__background"></div>
+          <div class="hero__beach-avatar"></div>
         </div>
       </div>
     </main>
     <footer>
       <p>Find me on</p>
-      <div>
-        <!-- Social Media -->
+      <div class="media-icons">
         <a href="https://github.com/Mahir33">
-          <img src="../img/github_icon.svg" alt="Github icon" />
+          <img
+            class="media-icons__icon"
+            src="../img/github_icon.svg"
+            alt="Github icon"
+          />
         </a>
         <a href="https://x.com/">
-          <img src="../img/twitter_icon.svg" alt="Twitter icon" />
+          <img
+            class="media-icons__icon"
+            src="../img/twitter_icon.svg"
+            alt="Twitter icon"
+          />
         </a>
         <a href="https://www.linkedin.com/in/adam-wrobel-90473a317/">
-          <img src="../img/linkedin_icon.svg" alt="LinkedIn icon" />
+          <img
+            class="media-icons__icon"
+            src="../img/linkedin_icon.svg"
+            alt="LinkedIn icon"
+          />
         </a>
       </div>
     </footer>
